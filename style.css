@@ -1,0 +1,111 @@
+/* MAIN STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+:root{
+  --dm-el: hsl(209, 23%, 22%);
+  --dm-bg: hsl(207, 26%, 17%);
+  --lm-input: hsl(0, 0%, 52%);
+  --lm-bg: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --lm-shadow: #d1d1d1;
+}
+
+html{
+  box-sizing: border-box;
+}
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+
+
+body{
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--lm-bg);
+}
+
+
+
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* END MAIN STYLES */
+
+
+/* HEADER */
+header{
+  height: 60px;
+  background: var(--white);
+  box-shadow: 0px 0px 4px var(--lm-shadow);
+}
+
+.h-b{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.dr-mode{
+  display: flex;
+
+  cursor: pointer;
+}
+.where{
+  font-weight: 800;
+  color: var(--dm-bg);
+}
+.dmBtn{
+  margin-left: 4px;
+  margin-top: 2px;
+}
+/* END HEADER */
+
+/* INPUT BLOCK */
+.inner-ib{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.bk-i{
+  position: relative;
+}
+.feather-search{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+input, select{
+  background: var(--white);
+  border: none;
+  padding: 12px 40px;
+  box-shadow:1px 1px 4px 1px var(--lm-shadow);
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: .8em;
+  width: 300px;
+}
+.bk-filter{
+  position: relative;
+}
+select{
+  padding: 10px;
+  padding-right: 50px;
+  width: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+option{
+  border: none;
+}
+.arr-down{
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  transform: rotate(90deg);
+}
+/* END INPUT BLOCK */
