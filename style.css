@@ -15,21 +15,24 @@ html{
 }
 *, *::after, *::before{
   box-sizing: inherit;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 
 body{
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
   background-color: var(--lm-bg);
 }
-
-
 
 .container{
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  height: 120px;
+}
+.h2{
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 
 /* END MAIN STYLES */
@@ -60,6 +63,8 @@ header{
 .dmBtn{
   margin-left: 4px;
   margin-top: 2px;
+  font-weight: 600;
+  font-size: .8em;
 }
 /* END HEADER */
 
@@ -109,3 +114,34 @@ option{
   transform: rotate(90deg);
 }
 /* END INPUT BLOCK */
+.output{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 40px;
+}
+.col{
+  box-shadow: 1px 1px 4px 1px var(--lm-shadow);
+  background: var(--white);
+  border-radius: 5px;
+}
+.outPrc{
+  padding: 1em;
+}
+.outPrc > .h2{
+  margin: 14px 0;
+  margin-top: 0;
+}
+.innerPrc > *{
+  margin: 5px 0;
+  font-size: .8em;
+}
+.innerPrc > p > span{
+  font-weight: 800;
+}
+.flag{
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
